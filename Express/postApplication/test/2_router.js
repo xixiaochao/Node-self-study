@@ -3,6 +3,7 @@ const app = express();
 // next表示执行下一个
 // 路径的分组
 // restul 风格的API接口 GET /user | POST /user | DELETE /user | PUT /user
+// 相同路径的接口只匹配一次就可以了
 app.get('/',function(req,res,next){
     console.log(1);
     next();
