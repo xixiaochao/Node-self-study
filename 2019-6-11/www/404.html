@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #num {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="time">
+        <p id="num"></p>
+    </div>
+</body>
+<script>
+    let time = document.getElementById('time')
+    var i = 0;
+    function checkTime(){
+        i++
+        console.log(i);
+        if(i==11){
+            i=0;
+        }
+        time.innerHTML=i
+        // let time = document.getElementById('time');
+        // let num = 10;
+        // //console.log(num);
+        // for(let i = 0; i<num;i++){
+        //     console.log(i);
+        // }
+        // num=num+1;
+        // var nowtime=Date.parse(new Date());
+        // console.log(nowtime);
+    }
+    setInterval("checkTime()","1000");
+</script>
+
+</html>
